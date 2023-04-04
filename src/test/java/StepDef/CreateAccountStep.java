@@ -72,8 +72,7 @@ public class CreateAccountStep {
 
     @Then("Should successfully createt account")
     public void shouldSuccessfullyCreatetAccount() {
-        System.out.println("Succes");
-//        Assert.assertTrue(driver.findElement(By.xpath("")).isDisplayed());
+       Assert.assertTrue(driver.findElement(By.xpath("//div[@id='success-mob']")).isDisplayed());
     }
 
     @And("Without input first name")
